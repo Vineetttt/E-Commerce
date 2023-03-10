@@ -1,0 +1,39 @@
+﻿#menu{
+    padding-top: 5px;
+    background-color: white;
+}
+.wrapper{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.wrapperDiv{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 50px;
+   margin: auto;
+   width: 60%;
+}
+.bgColorBox{
+    border: 1px solid gray;
+    width: 25%;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #E3E6F3;
+    border-radius: 5%;
+}
+.menuCategories{
+   border: 1px solid gray;
+   width: 25%;
+   text-align: center;
+   padding: 5px;
+   margin: 5px;
+   cursor: pointer;
+   border-radius: 5%;
+}
+.filteredProducts{
+    display: flex;
+    flex-direction: column;
+}

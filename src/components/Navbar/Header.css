@@ -1,0 +1,126 @@
+﻿#header{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: transparent;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.6); 
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* removing the bullet points from the defaut list tag */
+#navbar li{
+    list-style: none;
+    padding: 0 20px;  
+}
+#navbar li {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: 0.3s ease; /*for the hover transition to be smooth*/
+}
+#navbar li:hover,
+#navbar li.active{
+    color: #088178;   
+}
+.navLink{
+    text-decoration: none;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+.cart{
+    margin-top: 20%;
+    font-size: 1.5rem;
+}
+.logo{
+    height: 3rem;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.right > img{
+    border-radius: 50%;
+}
+.avatar{
+    height: 4rem;
+    padding: 10px;
+}
+.dropDown{
+    width: 140px;
+    height: 80%;
+    border-radius: 5%;
+    position: absolute;
+    background-color: white;
+    padding: 5px 8px;
+    top: 12;
+    right: 10;
+    margin-top: 50px;
+}
+.dropDown > p{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 600;
+}
+.dropDown > p:hover{
+    background-color: #E3E6F3;
+    transition: ease-in-out;
+}
+@media(max-width: 768px){
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0; 
+        right: -300px;  /*-300 to hide the navbar*/
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0,1);
+        padding: 80px 0 0 10px  ;
+        transition: 0.1s;
+    }
+    #navbar.active{
+        right: 0;
+    }
+    #navbar li{
+        margin-bottom: 20px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left:20px ;
+    }
+    #mobile a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+@media(max-width: 477px){
+    #header {
+        padding: 10px 30px;
+    }
+}

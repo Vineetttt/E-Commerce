@@ -1,0 +1,118 @@
+﻿body{
+    background-color: #E3E6F3;
+}
+.container{
+    width: 60%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 20%;
+    border: 1px solid gray;
+    padding: 2%;
+}
+.titleInput{
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+.titleInput > input{
+    border: 1px solid gray;
+    height: 40px;
+    width: 90%;
+}
+.titleInput > input::placeholder{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2px;
+}
+.selectOption{
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+.selectOption > select{
+    height: 40px;
+    width: 90%;
+    background: white;
+}
+.imageInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px;
+    margin: 3%;
+    margin-left: 10%;
+    border-style: dotted;
+    width: 80%;
+    height: 350px;
+    cursor: pointer;
+}
+.imageAssestPresent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.imageAssestPresentText{
+    color: gray;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.chooseFile{
+    width: 0;
+    height: 0;
+}
+.imageAssestAbsent{
+    position: relative;
+    height: 100%;
+}
+.imageUploaded{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reUpload{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    padding: 12px;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+}
+.price{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    gap: 2;
+    align-items:center;
+    justify-content: center;
+}
+.price > input{
+    border: 1px solid gray;
+    height: 40px;
+    width: 90%;
+}
+.price> input::placeholder{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2px;
+}
+.saveButton{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.saveButton > button{
+    margin-left: 0;
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: grey;
+    font-weight: 600;
+    margin-left: 5%;
+}
