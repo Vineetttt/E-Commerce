@@ -29,8 +29,8 @@ const ShopProducts = ({ flag , data }) =>{
                 <div className="pro-container">
                 {data && data.length > 0 ? (
                     data.map((item) => (
-                    <div className="pro" key={item?.id} onClick={()=>toItem()}>
-                        <img src={item?.imageURL} alt=""/>
+                    <div className="pro" key={item?.id}>
+                        <img src={item?.imageURL} alt="" onClick={()=>toItem()}/>
                         <div className="des">
                             <span>Desi Vibez Exculsive</span>
                             <h5>{item?.title}</h5>
